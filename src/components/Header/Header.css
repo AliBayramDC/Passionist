@@ -1,0 +1,221 @@
+/* Header.css */
+.header {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing image */
+    height: 33.9rem;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    right: 0;       
+    left: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    opacity: 2; /* Adjust the opacity as needed */
+    height: 100%;
+  }
+
+  .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value for darkness */
+  height: 100%;
+}
+
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 150px 0; /* Adjust the padding as needed */
+    font-family: var(--font-mont);
+  }
+  
+  h1 {
+    font-size: 3.8rem;
+    margin-top: 2.7rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .ctar {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    
+    
+  }
+  
+  .ctar span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .shop-button {
+    text-align: center;
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+  
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .scroll-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  .hover-underline-animation {
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  @media screen and (min-width: 2000px) {
+    .header {
+      height: 100px;
+    }
+
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .header {
+      height: 11.8rem;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 15px 0; /* Adjust the padding as needed */
+      font-family: var(--font-mont);
+    }
+    
+    h1 {
+      font-size: 1.3rem;
+      margin-top: 2.7rem;
+      margin-bottom: 10px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      
+    }
+    
+    p {
+      font-size: 0.8rem;
+    }
+    
+    .ctar {
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin-top: 2rem;
+      
+      
+    }
+    
+    .ctar span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 14px;
+      padding-right: 15px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 0.8rem;
+    }
+    
+    /* .background-image{
+      height: 20rem;
+    } */
+  }
+  
+  @media screen and (max-width: 650px) {
+    .header {
+      height: 9rem;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 5px 0; /* Adjust the padding as needed */
+      font-family: var(--font-mont);
+    }
+    
+    h1 {
+      font-size: 1rem;
+      margin-top: 2.7rem;
+      margin-bottom: 10px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      
+    }
+    
+    p {
+      font-size: 0.6rem;
+    }
+    
+    .ctar {
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin-top: 1rem;
+      
+      
+    }
+    
+    .ctar span {
+      padding-bottom: 7px;
+      letter-spacing: 4px;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: white;
+      font-size: 0.499rem;
+    }
+  }
+
+  

@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+  --font-mont: 'Montserrat', sans-serif;
+  --font-indie: 'Indie Flower', cursive;
+  --font-call: 'Calligraffitti', cursive;
+  --font-vibe: 'Great Vibes', cursive;
+  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-gray2: #AAAAAA;
+  --color-white: #FFFFFF;
+  --color-back: #edd9f6;
+  --color-pr: #7a22a0;
+  --color-sc: #dab6ed;
+  --color-acc: #8725b1;
+  --color-txt: #1b1839;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+/* Add this to your global CSS */
+/* For WebKit browsers (Chrome, Safari) */
+/* You might need to adjust the colors and other styles as needed */
+
+/* Change the width of the scrollbar track */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+/* Change the appearance of the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+/* Change the appearance when the scrollbar is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the thumb on hover */
+}
+
+/* Change the appearance of the scrollbar track when scrollbar is hovered */
+::-webkit-scrollbar-track:hover {
+  background-color: #f0f0f0; /* Color of the track on hover */
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,0 +1,204 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-family: var(--font-vibe);
+    color: #000000;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .logo a:hover {
+    border-bottom-color: #f8f8f8;
+  }
+  
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    font-family: var(--font-mont);
+    font-weight: 500;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #555;
+    border-bottom: 3px solid transparent; /* Add a transparent border bottom */
+    transition: border-color 0.3s ease; /* Add a smooth transition for the border color */
+  }
+  
+  .menu a:hover {
+    color: #333;
+    border-bottom-color: #c8dbef; /* Change the border color on hover */
+  }
+
+  .scroll-link-wrapper {
+    /* Add your custom styling here */
+    /* For example: */
+   /* Ensure the wrapper takes up only as much space as needed */
+    
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+  }
+  
+  
+
+  .auth-links {
+    padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-family: var(--font-mont);
+    
+  }
+  
+
+
+  
+  .button {
+  width: fit-content;
+  display: flex;
+  padding: 1.2em 1rem;
+  cursor: pointer;
+  gap: 0.4rem;
+  font-weight: bold;
+  border-radius: 30px;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(15deg, #cf965e, #cb8e52, #c27a33, #c06912) no-repeat;
+  background-size: 300%;
+  color: #fff;
+  border: none;
+  background-position: left center;
+  box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+  transition: background .3s ease;
+}
+
+.button:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+
+
+.cart-badge {
+  position: relative; /* Change to relative positioning */
+  top: -30px; /* Adjust the positioning as needed */
+  right: -20px;
+  background-color: #cc8e4f;
+  color: white; /* Change text color to white */
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 11px;
+  display: flex; /* Add display flex to center content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  width: 20px; /* Set a fixed width for better spacing */
+  height: 20px; /* Set a fixed height for better spacing */
+  font-family: var(--font-mont);
+}
+
+.material-symbols-outlined {
+  text-decoration: none;
+}
+
+.material-symbols-outlined:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.app__navbar-smallscreen {
+  display: none;
+}
+
+.hamburger123 {
+  cursor: pointer;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #f8f8f8;
+  transition: 1s ease;
+  color: black;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: black;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+  padding-top: 8rem;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: var(--font-mont);
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+  .logo {
+      width: 100%;
+  }
+  .auth-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .menu {
+      display: none;
+  }
+  .auth-links {
+    display: none;
+    visibility: hidden;
+  }
+
+  .app__navbar-smallscreen {
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+      padding: 1rem;
+  }
+
+ 
+
+  .logo {
+      width: 110px;
+  }
+}

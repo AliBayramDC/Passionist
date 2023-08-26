@@ -1,0 +1,56 @@
+/* styles.css */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 0px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 20px; /* Reduce horizontal padding */
+  font-family: var(--font-mont);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column; /* Display contact info in a column on small screens */
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px; /* Adjust gap between contact info elements */
+}
+
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-divider {
+  width: 1px;
+  height: 20px;
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+a:hover {
+  border-bottom-color: #c8dbef;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .topbar {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: flex-start; /* Align items at the start */
+      padding: 10px 20px; /* Adjust padding for better spacing */
+  }
+
+  .auth-links {
+      margin-top: 10px; /* Add margin to separate auth links from contact info */
+  }
+}

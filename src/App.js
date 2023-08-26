@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar, TopTopbar, Topbar, Products, CartPage, Footer, Header, JoinUsPage } from './components';
 
 function App() {
+  const [cartItems, setCartItems] = useState([]);
+
+  const appStyles = {
+    backgroundColor: '#f8f8f8', // Set your desired background color here
+  }; 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App" style={appStyles}>
+        <TopTopbar />
+        <Topbar />
+        <Navbar cartItems={cartItems} />
+
+        {/* Conditionally render the Header component */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header /> {/* Render Header on the main page */}
+                <Products cartItems={cartItems} setCartItems={setCartItems} />
+              </>
+            }
+          />
+          <Route path="/cart" element={<CartPage cartItems={cartItems} />} />
+          <Route path="/joinUsPage" element={<JoinUsPage />} ></Route>
+          {/* Add other routes here */}
+        </Routes>
+        
+          {/* Add other routes here */}
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

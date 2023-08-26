@@ -1,0 +1,20 @@
+.top_topbar {
+    font-family: var(--font-mont);
+    font-size: 1.1em;
+    padding: 0.4rem;
+    background: radial-gradient(circle, #a6703a, #cf965e);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .top_topbar {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+        padding: 0.6rem 0.2rem; /* Increase vertical padding and reduce horizontal padding */
+    }
+}
