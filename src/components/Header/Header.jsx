@@ -11,7 +11,7 @@ const Header = () => {
         <div className="overlay"></div>
       </div>
       <div className="content">
-        <h1>Welcome to BebisStyle</h1>
+        <h1>Welcome to Passionist</h1>
         <p>Transform Your Home with Elegant Furniture Solutions</p>
         <div className="shop-button">
           <button className="ctar">
